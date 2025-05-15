@@ -1,0 +1,61 @@
+# Nombre del proyecto
+name: app_inspecciones_mobil
+
+# Descripción breve (usada en pub.dev si algún día publicas)
+description: "A new Flutter project."
+
+# Previene que se publique accidentalmente en pub.dev
+publish_to: 'none'
+
+# Versión de la app: nombre + número de compilación
+version: 1.0.0+1
+
+# Requisitos mínimos de versión del SDK de Dart
+environment:
+  sdk: ^3.7.2
+
+# -----------------------------
+# DEPENDENCIAS PRINCIPALES
+# -----------------------------
+dependencies:
+  flutter:
+    sdk: flutter  # Flutter SDK principal
+
+  cupertino_icons: ^1.0.8  # Iconos estilo iOS
+  flutter_launcher_icons: ^0.14.3  # Plugin para generar íconos de la app
+  geolocator: ^14.0.0
+  permission_handler: ^12.0.0+1
+
+# -----------------------------
+# DEPENDENCIAS SOLO PARA DESARROLLO
+# -----------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Soporte para pruebas unitarias con Flutter
+
+  flutter_lints: ^5.0.0  # Buenas prácticas recomendadas para tu código
+
+# -----------------------------
+# CONFIGURACIÓN DE ÍCONO DE LA APP
+# Este bloque configura el ícono que aparecerá en Android e iOS.
+# Se genera con: flutter pub run flutter_launcher_icons:main
+# -----------------------------
+flutter_icons:
+  android: true  # Generar íconos para Android
+  ios: true      # Generar íconos para iOS
+  image_path: "assets/Icon.png"  # Imagen base para generar íconos (512x512 recomendado)
+
+# -----------------------------
+# CONFIGURACIÓN DE FLUTTER
+# Aquí defines los recursos (assets), fuentes y otras configuraciones.
+# -----------------------------
+flutter:
+  uses-material-design: true  # Usa íconos Material (Android) por defecto
+
+  # Archivos de imagen usados dentro de la app (no relacionados al ícono de la app)
+  assets:
+    - assets/Icon.png    # Ícono que también puedes usar visualmente
+    - assets/splash.png  # Imagen que se mostrará en el splash screen
+    - assets/LogoAzulSplash.jpg
+
+
